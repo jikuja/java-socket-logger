@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '1.2.2'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group 'io.github.jikuja'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'io.github.jikuja.socket_logger.WithJavassist'
+    }
+}
+
+dependencies {
+    compile 'org.javassist:javassist:3.20.0-GA'
+}
