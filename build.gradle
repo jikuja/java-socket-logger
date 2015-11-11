@@ -16,6 +16,7 @@ targetCompatibility = 1.6
 jar {
     manifest {
         attributes 'Main-Class': 'io.github.jikuja.socket_logger.WithJavassist'
+        attributes 'Premain-Class': 'io.github.jikuja.socket_logger.Agent'
     }
 }
 
